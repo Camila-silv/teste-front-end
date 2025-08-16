@@ -1,15 +1,13 @@
-import { FunctionComponent } from "react"
-import { Header } from "./components"
+import { FunctionComponent } from 'react';
+import { Header, Banner } from './components';
 
 const App: FunctionComponent = () => {
-
-
   return (
     <>
-
-    <Header />
+      <Header />
+      <Banner />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

@@ -1,3 +1,4 @@
-import Header from "./header/header.component";
+import Header from './header/header.component';
+import Banner from './banner/banner.component';
 
-export {Header}
+export { Header, Banner };

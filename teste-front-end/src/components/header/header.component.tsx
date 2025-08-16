@@ -1,8 +1,8 @@
 import './header.styles.scss';
 
-import creditCard from '../../../public/credit-card.svg';
-import truck from '../../../public/truck.svg';
-import shield from '../../../public/shield.svg';
+import creditCard from '../../../public/icons/credit-card.svg';
+import truck from '../../../public/icons/truck.svg';
+import shield from '../../../public/icons/shield.svg';
 import logo from '../../../public/logo.webp';
 
 import { CiSearch } from 'react-icons/ci';
@@ -57,7 +57,7 @@ const Header: FunctionComponent = () => {
         </div>
       </div>
       <header className="container">
-        <div className="header-container">
+        <div className="header-container px">
           <img
             src={logo}
             alt="Logo Econverse"
@@ -93,7 +93,7 @@ const Header: FunctionComponent = () => {
           </ul>
         </div>
         <nav>
-          <ul className="navbar-items">
+          <ul className="navbar-items px">
             <li className="navbar-items__item">
               <a href="/" title="Todas as compras">
                 Todas as compras

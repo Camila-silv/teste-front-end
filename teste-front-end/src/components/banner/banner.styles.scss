@@ -1,0 +1,56 @@
+.banner-container {
+  background: url('../../../public/banner.webp') no-repeat;
+  background-size: cover;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+
+.banner-container .container > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.banner-container h2 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 50px;
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+.banner-container p {
+    font-size: 32px;
+    line-height: auto;
+    color: #fff;
+    font-weight: 400;
+}
+
+.banner-container p > span {
+    color: #f7ca11;
+    font-weight: 700;
+}
+
+.banner-container a {
+    width: 100%;
+    max-width: 140px;
+    height: 50px;
+    padding: 7px 49px;
+    border-radius: 5px;
+    background: #f7ca11;
+    font-size: 16px;
+    color: #271c47;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    transition: .3s ease;
+}
+
+.banner-container a:hover {
+    color: #fafafa;
+    background-color: #9f9f9f;
+}
