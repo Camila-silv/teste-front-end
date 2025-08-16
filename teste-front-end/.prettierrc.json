@@ -1,1 +1,9 @@
-"prettier-config-standard"
+{
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "printWidth": 80,
+  "tabWidth": 2,
+  "endOfLine": "auto",
+  "arrowParens": "avoid"
+}
