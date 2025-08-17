@@ -3,14 +3,14 @@
   background-size: cover;
   padding-bottom: 80px;
   padding-top: 80px;
+  display: none;
 }
 
-
 .banner-container .container > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
 }
 
 .banner-container h2 {
@@ -22,35 +22,40 @@
 }
 
 .banner-container p {
-    font-size: 32px;
-    line-height: auto;
-    color: #fff;
-    font-weight: 400;
+  font-size: 32px;
+  line-height: auto;
+  color: #fff;
+  font-weight: 400;
 }
 
 .banner-container p > span {
-    color: #f7ca11;
-    font-weight: 700;
+  color: #f7ca11;
+  font-weight: 700;
 }
 
 .banner-container a {
-    width: 100%;
-    max-width: 140px;
-    height: 50px;
-    padding: 7px 49px;
-    border-radius: 5px;
-    background: #f7ca11;
-    font-size: 16px;
-    color: #271c47;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    transition: .3s ease;
+  width: fit-content;
+  height: 50px;
+  padding: 7px 49px;
+  border-radius: 5px;
+  background: #f7ca11;
+  font-size: 16px;
+  color: #271c47;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  transition: 0.3s ease;
 }
 
 .banner-container a:hover {
-    color: #fafafa;
-    background-color: #9f9f9f;
+  color: #fafafa;
+  background-color: #9f9f9f;
+}
+
+@media screen and (min-width: 992px) {
+  .banner-container {
+    display: block;
+  }
 }

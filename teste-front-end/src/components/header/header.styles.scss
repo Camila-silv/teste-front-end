@@ -7,7 +7,9 @@
 .list-benefits {
   display: flex;
   justify-content: center;
-  gap: 7.438rem;
+  gap: 14px;
+  flex-wrap: wrap;
+  height: fit-content;
 }
 
 .list-benefits__item {
@@ -27,11 +29,13 @@
 
 .header-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding-bottom: 16px;
   padding-top: 16px;
   align-items: center;
   border-bottom: 1px solid #f0f0f0;
+  flex-wrap: wrap;
+  gap: 14px;
 }
 
 .header-container form {
@@ -145,7 +149,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 91px;
+  flex-wrap: wrap;
+  gap: 14px;
   padding-top: 16px;
   padding-bottom: 16px;
   box-shadow: 0 8px 16px 0 #39301312;
@@ -202,4 +207,19 @@
 
 .navbar-items__item--custom a:hover .icon::after {
   opacity: 1;
+}
+
+@media screen and (min-width: 992px) {
+  .header-container {
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .navbar-items {
+    gap: 91px;
+  }
+
+  .list-benefits {
+    gap: 7.438rem;
+  }
 }
