@@ -1,0 +1,193 @@
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 48px;
+  padding-top: 48px;
+  align-items: center;
+}
+
+.carousel-container h2 {
+  font-weight: 700;
+  font-size: 30px;
+  color: #3442b5;
+  text-align: center;
+  position: relative;
+  width: fit-content;
+}
+
+.carousel-container h2::before,
+.carousel-container h2::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  max-width: 360px;
+  height: 1px;
+  background-color: #dedede;
+  display: none;
+}
+
+.carousel-container h2::before {
+  left: -380px;
+}
+
+.carousel-container h2::after {
+  right: -380px;
+}
+
+.carousel-container .splide {
+    padding-top: 20px;
+}
+
+.carousel-container .splide__track {
+  padding: 24px !important;
+  margin-top: 0;
+}
+
+.carousel-container .splide__arrow {
+  box-shadow: 0 4px 4px 0 #00000025;
+  height: 32px;
+  width: 32px;
+  border-radius: 100px;
+  background-color: #fff;
+  padding: 6px;
+}
+
+.carousel-container .splide__arrow svg {
+  fill: #3f3f40;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-container .splide__arrow:hover:not(:disabled) svg {
+  fill: #3442b5;
+}
+
+.carousel-container .carousel-container__card {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 3px 19px 0 #00000022;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-container__card img {
+  width: 100%;
+  object-fit: cover;
+  height: 228px;
+}
+
+.carousel-container__card > .content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 14px;
+}
+
+.carousel-container__card > .content p {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 23px;
+  color: #3f3f40;
+  margin-bottom: 24px;
+}
+
+.carousel-container__card > .content .old-price {
+  color: #808080;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+.carousel-container__card > .content .current-price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: auto;
+  color: #3f3f40;
+}
+
+.carousel-container__card > .content .installment-price {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: auto;
+  color: #3f3f40;
+}
+
+.carousel-container__card > .content .label {
+  font-size: 12px;
+  font-weight: 400;
+  color: #3442b5;
+  line-height: auto;
+}
+
+.carousel-container__card > .content .btn {
+  width: 100%;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #3442b5;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 16px 12px;
+  transition: 0.3s ease;
+}
+
+.carousel-container__card > .content .old-price,
+.carousel-container__card > .content .current-price,
+.carousel-container__card > .content .installment-price,
+.carousel-container__card > .content .label {
+  margin-bottom: 14px;
+}
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.filter-list li {
+    display: flex;
+}
+
+.filter-list__item {
+  font-size: 16px;
+  color: #3d3d3d;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 12px 58px;
+  display: block;
+  transition: 0.3s ease;
+  border: 1px solid #bdbdbd;
+  text-align: center;
+  flex-grow: 1;
+  width: 214px;
+}
+
+
+.filter-list__item:hover {
+  color: #3442b5;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 992px) {
+  .carousel-container__card:hover .btn {
+    background-color: #9f9f9f;
+  }
+
+  .carousel-container h2::before,
+  .carousel-container h2::after {
+    display: block;
+  }
+
+  .filter-list__item {
+    width: 100%;
+  }
+}
