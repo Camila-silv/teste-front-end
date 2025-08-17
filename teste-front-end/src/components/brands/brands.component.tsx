@@ -35,8 +35,8 @@ const Brands: FunctionComponent = () => {
               src={logo}
               alt="Logo Econverse"
               title="Logo Econverse"
-              height=""
-              width=""
+              height="35"
+              width="117"
               loading="lazy"
             />
           </div>
@@ -47,8 +47,8 @@ const Brands: FunctionComponent = () => {
               src={logo}
               alt="Logo Econverse"
               title="Logo Econverse"
-              height=""
-              width=""
+              height="35"
+              width="117"
               loading="lazy"
             />
           </div>
@@ -59,8 +59,8 @@ const Brands: FunctionComponent = () => {
               src={logo}
               alt="Logo Econverse"
               title="Logo Econverse"
-              height=""
-              width=""
+              height="35"
+              width="117"
               loading="lazy"
             />
           </div>
@@ -71,8 +71,8 @@ const Brands: FunctionComponent = () => {
               src={logo}
               alt="Logo Econverse"
               title="Logo Econverse"
-              height=""
-              width=""
+              height="35"
+              width="117"
               loading="lazy"
             />
           </div>
@@ -83,8 +83,8 @@ const Brands: FunctionComponent = () => {
               src={logo}
               alt="Logo Econverse"
               title="Logo Econverse"
-              height=""
-              width=""
+              height="35"
+              width="117"
               loading="lazy"
             />
           </div>
@@ -95,8 +95,8 @@ const Brands: FunctionComponent = () => {
               src={logo}
               alt="Logo Econverse"
               title="Logo Econverse"
-              height=""
-              width=""
+              height="35"
+              width="117"
               loading="lazy"
             />
           </div>
@@ -107,8 +107,8 @@ const Brands: FunctionComponent = () => {
               src={logo}
               alt="Logo Econverse"
               title="Logo Econverse"
-              height=""
-              width=""
+              height="35"
+              width="117"
               loading="lazy"
             />
           </div>

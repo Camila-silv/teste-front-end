@@ -6,6 +6,7 @@ import {
   Carousel,
   Partners,
   Brands,
+  Footer
 } from './components';
 
 // Default theme
@@ -65,8 +66,10 @@ const App: FunctionComponent = () => {
           <Carousel>{<span className="subtitle">Ver todos</span>}</Carousel>
           <Partners />
           <Brands />
+          <Carousel>{<span className="subtitle">Ver todos</span>}</Carousel>
         </section>
       </main>
+      <Footer />
     </>
   );
 };
