@@ -36,8 +36,17 @@
   right: -380px;
 }
 
+.carousel-container .subtitle {
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  color: #3f3f40;
+  margin-top: 15px;
+}
+
 .carousel-container .splide {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 .carousel-container .splide__track {
@@ -153,7 +162,7 @@
 }
 
 .filter-list li {
-    display: flex;
+  display: flex;
 }
 
 .filter-list__item {
@@ -170,7 +179,6 @@
   flex-grow: 1;
   width: 214px;
 }
-
 
 .filter-list__item:hover {
   color: #3442b5;

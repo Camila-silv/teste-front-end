@@ -1,5 +1,12 @@
 import { FunctionComponent } from 'react';
-import { Header, Banner, Categories, Carousel, Partners} from './components';
+import {
+  Header,
+  Banner,
+  Categories,
+  Carousel,
+  Partners,
+  Brands,
+} from './components';
 
 // Default theme
 import '@splidejs/react-splide/css';
@@ -55,6 +62,9 @@ const App: FunctionComponent = () => {
             }
           </Carousel>
           <Partners />
+          <Carousel>{<span className="subtitle">Ver todos</span>}</Carousel>
+          <Partners />
+          <Brands />
         </section>
       </main>
     </>
