@@ -1,16 +1,21 @@
-import { FunctionComponent } from 'react';
+import { FunctionComponent, useContext } from 'react';
 import './modal.styles.scss';
 import teste from '../../../public/teste.png';
 
 import { MdKeyboardArrowRight } from 'react-icons/md';
 import { IoCloseOutline } from 'react-icons/io5';
 import { GrFormAdd, GrFormSubtract } from 'react-icons/gr';
+import { useModal } from '../../hooks/useModal.hook';
 
 const Modal: FunctionComponent = () => {
+  const { showModal, setShowModal } = useModal();
+
   return (
-    <div className="modal-container">
-      <div className="content">
-        <button className="close-btn">
+    <div
+      className={`modal-container ${showModal && `modal-container--active`}`}
+    >
+      <div className={`content ${showModal && `content--active`}`}>
+        <button className="close-btn" onClick={() => setShowModal(false)}>
           <IoCloseOutline />
         </button>
         <div className="left">
@@ -38,7 +43,12 @@ const Modal: FunctionComponent = () => {
               <button>
                 <GrFormAdd />
               </button>
-              <input type="number" min={1} max={10} aria-label="Quantidade de itens" />
+              <input
+                type="number"
+                min={1}
+                max={10}
+                aria-label="Quantidade de itens"
+              />
               <button>
                 <GrFormSubtract />
               </button>
