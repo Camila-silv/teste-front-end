@@ -1,14 +1,16 @@
 import { FunctionComponent, useContext } from 'react';
 import './modal.styles.scss';
-import teste from '../../../public/teste.png';
 
 import { MdKeyboardArrowRight } from 'react-icons/md';
 import { IoCloseOutline } from 'react-icons/io5';
 import { GrFormAdd, GrFormSubtract } from 'react-icons/gr';
 import { useModal } from '../../hooks/useModal.hook';
 
+
 const Modal: FunctionComponent = () => {
-  const { showModal, setShowModal } = useModal();
+  const { showModal, setShowModal, selectedProduct } = useModal();
+
+  if (!selectedProduct) return null; 
 
   return (
     <div
@@ -20,17 +22,23 @@ const Modal: FunctionComponent = () => {
         </button>
         <div className="left">
           <img
-            src={teste}
-            alt=""
-            title=""
+            src={selectedProduct.photo}
+            alt={selectedProduct.productName}
+            title={selectedProduct.productName}
             loading="lazy"
             height="203"
             width="169"
           />
         </div>
         <div className="right">
-          <h3>Lorem ipsum dolor sit amet</h3>
-          <span>R$ 1.499,90</span>
+          <h3>{selectedProduct.productName}</h3>
+          <span>
+            {' '}
+            {selectedProduct.price.toLocaleString('pt-BR', {
+              style: 'currency',
+              currency: 'BRL',
+            })}
+          </span>
           <p>
             Many desktop publishing packages and web page editors now many
             desktop publishing

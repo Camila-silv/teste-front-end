@@ -26,3 +26,9 @@ padding-bottom: 48px;
 .brands-container .splide__track {
     padding: 24px !important;
 }
+
+.brands-container .splide__track .splide__slide 
+{
+    display: flex;
+    justify-content: center;
+}

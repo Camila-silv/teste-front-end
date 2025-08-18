@@ -4,7 +4,7 @@ import { FunctionComponent } from 'react';
 
 const Banner: FunctionComponent = () => {
   return (
-    <div className="banner-container px">
+    <div className="banner-container">
       <div className="container">
         <div>
           <h2>Venha conhecer nossas <br/> promoções</h2>

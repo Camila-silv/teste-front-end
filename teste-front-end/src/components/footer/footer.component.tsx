@@ -10,7 +10,7 @@ const Footer: FunctionComponent = () => {
   return (
     <>
       <div className="top-footer">
-        <div className="container px">
+        <div className="container">
           <div className="top-footer__container">
             <div>
               <h2>Inscreva-se na nossa newsletter</h2>
@@ -61,7 +61,7 @@ const Footer: FunctionComponent = () => {
         </div>
       </div>
       <footer>
-        <div className="container px">
+        <div className="container">
           <div className="footer-container">
             <div className="left">
               <img

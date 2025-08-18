@@ -1,8 +1,11 @@
 .carousel-container {
-  display: flex;
-  flex-direction: column;
   padding-bottom: 48px;
   padding-top: 48px;
+}
+
+.carousel-container .header {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -12,7 +15,6 @@
   color: #3442b5;
   text-align: center;
   position: relative;
-  width: fit-content;
 }
 
 .carousel-container h2::before,
@@ -96,7 +98,7 @@
   margin-top: 14px;
 }
 
-.carousel-container__card > .content p {
+.carousel-container__card > .content h3 {
   font-weight: 300;
   font-size: 15px;
   line-height: 23px;
@@ -190,12 +192,17 @@
     background-color: #9f9f9f;
   }
 
+  .filter-list__item {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1110px) {
   .carousel-container h2::before,
   .carousel-container h2::after {
     display: block;
   }
-
-  .filter-list__item {
-    width: 100%;
+  .carousel-container h2 {
+    width: fit-content;
   }
 }

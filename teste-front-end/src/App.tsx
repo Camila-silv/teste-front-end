@@ -22,7 +22,7 @@ const App: FunctionComponent = () => {
       <ModalProvider>
         <Header />
         <Banner />
-        <main className="container px">
+        <main className="container">
           <section>
             <Categories />
             <Carousel>

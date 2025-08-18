@@ -12,7 +12,7 @@ const Header: FunctionComponent = () => {
   return (
     <div>
       <div className="container ">
-        <div className="top-container px">
+        <div className="top-container">
           <ul className="list-benefits">
             <li className="list-benefits__item">
               <img
@@ -57,7 +57,7 @@ const Header: FunctionComponent = () => {
         </div>
       </div>
       <header className="container">
-        <div className="header-container px">
+        <div className="header-container">
           <img
             src={logo}
             alt="Logo Econverse"
@@ -93,7 +93,7 @@ const Header: FunctionComponent = () => {
           </ul>
         </div>
         <nav>
-          <ul className="navbar-items px">
+          <ul className="navbar-items">
             <li className="navbar-items__item">
               <a href="/" title="Todas as compras">
                 Todas as compras

@@ -1,30 +1,33 @@
 import './carousel.styles.scss';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
-import { ReactNode, FunctionComponent, useContext } from 'react';
+import { ReactNode, FunctionComponent } from 'react';
 
-import teste from '../../../public/teste.png';
 import { useModal } from '../../hooks/useModal.hook';
-import { ProductsContext } from '../../context/ProductsContext';
 import { useProducts } from '../../hooks/useProducts.hook';
+
+import { Product } from "../../context/ProductsContext";
 
 interface CarouselProps {
   children: ReactNode;
 }
 
 const Carousel: FunctionComponent<CarouselProps> = ({ children }) => {
-  const { setShowModal } = useModal();
+  const { setShowModal, setSelectedProduct } = useModal();
   const { products } = useProducts();
 
-  const handleModal = (e: React.MouseEvent) => {
+  const handleModal = (e: React.MouseEvent, product: Product) => {
     e.preventDefault();
+    setSelectedProduct(product);
     setShowModal(true);
   };
 
   return (
     <div className="carousel-container ">
-      <h2>Produtos relacionados</h2>
+      <div className="header">
+        <h2>Produtos relacionados</h2>
 
-      {children}
+        {children}
+      </div>
 
       <div className="content">
         <div className="container">
@@ -44,7 +47,7 @@ const Carousel: FunctionComponent<CarouselProps> = ({ children }) => {
               <SplideSlide key={product.productName}>
                 <div className="carousel-container__card">
                   <img
-                    src={teste}
+                    src={product.photo}
                     alt={product.productName}
                     title={product.productName}
                     loading="lazy"
@@ -52,7 +55,7 @@ const Carousel: FunctionComponent<CarouselProps> = ({ children }) => {
                     width="272"
                   />
                   <div className="content">
-                    <p>{product.descriptionShort}</p>
+                    <h3>{product.descriptionShort}</h3>
                     <span className="old-price">
                       {(product.price * 20).toLocaleString('pt-BR', {
                         style: 'currency',
@@ -78,7 +81,7 @@ const Carousel: FunctionComponent<CarouselProps> = ({ children }) => {
                       href="/"
                       title="Comprar"
                       className="btn"
-                      onClick={handleModal}
+                      onClick={(e) => handleModal(e, product)}
                     >
                       Comprar
                     </a>
