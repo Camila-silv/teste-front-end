@@ -1,6 +1,6 @@
 .top-footer {
   background-color: #271c47;
-  padding: 35px;
+  padding: 35px 0;
 }
 
 .top-footer h2 {
@@ -29,7 +29,6 @@
 
 .input-group {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   gap: 8px;
 }
@@ -49,7 +48,6 @@
   font-weight: 400;
   transition: 0.3s ease;
   width: 100%;
-  max-width: 233px;
 }
 
 .input-group__input:active,
@@ -94,7 +92,7 @@ footer {
 .footer-container {
   display: flex;
   flex-direction: column;
-  padding: 42px 35px;
+  padding: 42px 0;
 }
 
 .footer-container .left {
@@ -141,7 +139,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 50px;
-   margin-top: 40px;
+  margin-top: 40px;
 }
 
 .footer-container .right h3 {
@@ -172,11 +170,11 @@ footer {
 
 @media screen and (min-width: 992px) {
   .top-footer {
-    padding: 60px 120px;
+    padding: 60px 0;
   }
 
   .footer-container {
-    padding: 42px 80px;
+    padding: 42px 0;
     flex-direction: row;
   }
 
@@ -210,6 +208,12 @@ footer {
 
   .footer-container .right a:hover {
     color: #f7ca11;
+  }
+
+  .input-group__input[type='text'],
+  .input-group__input[type='email'] {
+    max-width: 233px;
+    width: 100%;
   }
 }
 

@@ -4,6 +4,16 @@ import Categories from './categories/categories.component';
 import Carousel from './carousel/carousel.component';
 import Partners from './partners/partners.component';
 import Brands from './brands/brands.component';
-import Footer from "./footer/footer.component"
+import Footer from './footer/footer.component';
+import Modal from './modal/modal.component';
 
-export { Header, Banner, Categories, Carousel, Partners, Brands, Footer };
+export {
+  Header,
+  Banner,
+  Categories,
+  Carousel,
+  Partners,
+  Brands,
+  Footer,
+  Modal,
+};

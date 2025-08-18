@@ -6,7 +6,8 @@ import {
   Carousel,
   Partners,
   Brands,
-  Footer
+  Footer,
+  Modal
 } from './components';
 
 // Default theme
@@ -70,6 +71,8 @@ const App: FunctionComponent = () => {
         </section>
       </main>
       <Footer />
+
+      <Modal />
     </>
   );
 };

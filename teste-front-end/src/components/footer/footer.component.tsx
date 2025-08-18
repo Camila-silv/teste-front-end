@@ -10,7 +10,7 @@ const Footer: FunctionComponent = () => {
   return (
     <>
       <div className="top-footer">
-        <div className="container">
+        <div className="container px">
           <div className="top-footer__container">
             <div>
               <h2>Inscreva-se na nossa newsletter</h2>
@@ -61,7 +61,7 @@ const Footer: FunctionComponent = () => {
         </div>
       </div>
       <footer>
-        <div className="container">
+        <div className="container px">
           <div className="footer-container">
             <div className="left">
               <img
@@ -110,41 +110,41 @@ const Footer: FunctionComponent = () => {
                 </ul>
               </div>
               <div className='right__container'>
-                <h3>Institucional</h3>
+                <h3>Ajuda</h3>
                 <ul>
                   <li>
-                    <a href="/" title="Sobre Nós">
-                      Sobre Nós
+                    <a href="/" title="Suporte">
+                      Suporte
                     </a>
                   </li>
                   <li>
-                    <a href="/" title="Movimento">
-                      Movimento
+                    <a href="/" title="Fale Conosco">
+                      Fale Conosco
                     </a>
                   </li>
                   <li>
-                    <a href="/" title="Trabalhe conosco">
-                      Trabalhe conosco
+                    <a href="/" title="Perguntas Frequentes">
+                      Perguntas Frequentes
                     </a>
                   </li>
                 </ul>
               </div>
               <div className='right__container'>
-                <h3>Institucional</h3>
+                <h3>Termos</h3>
                 <ul>
                   <li>
-                    <a href="/" title="Sobre Nós">
-                      Sobre Nós
+                    <a href="/" title="Termos e Condições">
+                      Termos e Condições
                     </a>
                   </li>
                   <li>
-                    <a href="/" title="Movimento">
-                      Movimento
+                    <a href="/" title="Política de Privacidade">
+                      Política de Privacidade
                     </a>
                   </li>
                   <li>
-                    <a href="/" title="Trabalhe conosco">
-                      Trabalhe conosco
+                    <a href="/" title="Troca e Devolução">
+                      Troca e Devolução
                     </a>
                   </li>
                 </ul>
