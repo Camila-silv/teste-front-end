@@ -7,8 +7,11 @@ import logo from '../../../public/logo.webp';
 
 import { CiSearch } from 'react-icons/ci';
 import { FunctionComponent } from 'react';
+import { Link } from 'react-router-dom';
+import { useFavorites } from '../../hooks/useFavorites.hooks';
 
 const Header: FunctionComponent = () => {
+  const { favoritesList } = useFavorites();
   return (
     <div>
       <div className="container ">
@@ -58,13 +61,17 @@ const Header: FunctionComponent = () => {
       </div>
       <header className="container">
         <div className="header-container">
-          <img
-            src={logo}
-            alt="Logo Econverse"
-            title="Logo Econverse"
-            height="42"
-            width="139"
-          />
+          <Link to="/" title="Página inicial">
+            <h1>
+              <img
+                src={logo}
+                alt="Logo Econverse"
+                title="Logo Econverse"
+                height="42"
+                width="139"
+              />
+            </h1>
+          </Link>
 
           <form role="search">
             <input
@@ -79,8 +86,12 @@ const Header: FunctionComponent = () => {
             <li className="header-items__item">
               <a href="/" title="Compras realizadas"></a>
             </li>
-            <li className="header-items__item">
-              <a href="/" title="Favoritos"></a>
+            <li className="header-items__item" id="favorites">
+              {favoritesList.length === 0 ? null : (
+                <span>{favoritesList.length}</span>
+              )}
+
+              <Link to="/favorites" title="Favoritos"></Link>
             </li>
 
             <li className="header-items__item">

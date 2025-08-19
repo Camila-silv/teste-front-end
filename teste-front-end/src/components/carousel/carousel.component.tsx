@@ -5,21 +5,14 @@ import { ReactNode, FunctionComponent } from 'react';
 import { useModal } from '../../hooks/useModal.hook';
 import { useProducts } from '../../hooks/useProducts.hook';
 
-import { Product } from "../../context/ProductsContext";
+import { Card } from '../index';
 
 interface CarouselProps {
   children: ReactNode;
 }
 
 const Carousel: FunctionComponent<CarouselProps> = ({ children }) => {
-  const { setShowModal, setSelectedProduct } = useModal();
   const { products } = useProducts();
-
-  const handleModal = (e: React.MouseEvent, product: Product) => {
-    e.preventDefault();
-    setSelectedProduct(product);
-    setShowModal(true);
-  };
 
   return (
     <div className="carousel-container ">
@@ -45,48 +38,7 @@ const Carousel: FunctionComponent<CarouselProps> = ({ children }) => {
           >
             {products.map(product => (
               <SplideSlide key={product.productName}>
-                <div className="carousel-container__card">
-                  <img
-                    src={product.photo}
-                    alt={product.productName}
-                    title={product.productName}
-                    loading="lazy"
-                    height="228"
-                    width="272"
-                  />
-                  <div className="content">
-                    <h3>{product.descriptionShort}</h3>
-                    <span className="old-price">
-                      {(product.price * 20).toLocaleString('pt-BR', {
-                        style: 'currency',
-                        currency: 'BRL',
-                      })}
-                    </span>
-                    <span className="current-price">
-                      {product.price.toLocaleString('pt-BR', {
-                        style: 'currency',
-                        currency: 'BRL',
-                      })}
-                    </span>
-                    <span className="installment-price">
-                      ou 2x de{' '}
-                      {(product.price / 2).toLocaleString('pt-BR', {
-                        style: 'currency',
-                        currency: 'BRL',
-                      })}{' '}
-                      sem juros
-                    </span>
-                    <span className="label">Frete grátis</span>
-                    <a
-                      href="/"
-                      title="Comprar"
-                      className="btn"
-                      onClick={(e) => handleModal(e, product)}
-                    >
-                      Comprar
-                    </a>
-                  </div>
-                </div>
+                <Card product={product} />
               </SplideSlide>
             ))}
           </Splide>

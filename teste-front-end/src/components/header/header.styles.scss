@@ -208,6 +208,18 @@
   opacity: 1;
 }
 
+.header-items #favorites {
+  position: relative;
+
+  span {
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    color: #3019b2;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .header-container {
     justify-content: space-between;
