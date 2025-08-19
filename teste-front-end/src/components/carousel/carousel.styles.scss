@@ -56,6 +56,12 @@
   margin-top: 0;
 }
 
+.carousel-container .splide__track .splide__slide {
+  display: flex;
+  justify-content: center;
+}
+
+
 .carousel-container .splide__arrow {
   box-shadow: 0 4px 4px 0 #00000025;
   height: 32px;

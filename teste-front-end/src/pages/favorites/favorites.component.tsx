@@ -12,11 +12,15 @@ const Favorites: FunctionComponent = () => {
         <div className="favorites-container">
           <h2>Favoritos</h2>
 
-          <div className="content">
-            {favoritesList.map(favorite => (
-              <Card product={favorite} key={favorite.productName} />
-            ))}
-          </div>
+          {favoritesList.length === 0 ? (
+            <p className='favorites-container__alert'>Sem favoritos...</p>
+          ) : (
+            <div className="content">
+              {favoritesList.map(favorite => (
+                <Card product={favorite} key={favorite.productName} />
+              ))}
+            </div>
+          )}
         </div>
       </div>
 

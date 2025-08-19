@@ -22,14 +22,15 @@ const Card: FunctionComponent<CardProps> = ({ product }) => {
     setShowModal(true);
   };
 
-  const handleFavorite = (e: React.MouseEvent, product: Product) => {
-    e.preventDefault();
+ const handleFavorite = (e: React.MouseEvent, product: Product) => {
+  e.preventDefault();
 
-    if (!favoritesList.some(fav => fav.productName === product.productName)) {
-      setFavoritesList([...favoritesList, product]);
-      console.log(favoritesList);
-    }
-  };
+  if (favoritesList.some(fav => fav.productName === product.productName)) {
+    setFavoritesList(favoritesList.filter(fav => fav.productName !== product.productName));
+  } else {
+    setFavoritesList([...favoritesList, product]);
+  }
+};
 
   return (
     <div className="product-card">
