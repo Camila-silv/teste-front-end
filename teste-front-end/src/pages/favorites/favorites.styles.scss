@@ -1,0 +1,23 @@
+.favorites-container {
+  padding: 5rem 0;
+}
+
+.favorites-container > .content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2.5rem 0;
+}
+
+.favorites-container h2 {
+  text-align: center;
+  color: #3442b5;
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.favorites-container__alert {
+  text-align: center;
+  margin-top: 1.25rem;
+}

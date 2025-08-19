@@ -1,0 +1,69 @@
+.partners-container {
+  display: flex;
+  gap: 13px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 16px;
+  padding-bottom: 48px;
+}
+
+.partners-container__card {
+  border-radius: 16px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 634px;
+  padding: 34px;
+  background: #000;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 85%),
+    url('../../../public/partners.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.partners-container__card h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.partners-container__card p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.partners-container__card a {
+  border-radius: 6px;
+  width: fit-content;
+  background-color: #f7ca11;
+  font-size: 16px;
+  font-weight: 700;
+  color: #4d1ed4;
+  letter-spacing: 1px;
+  display: block;
+  padding: 16px 24px;
+  text-transform: uppercase;
+  margin-top: 24px;
+  transition: 0.3s ease;
+  transform: scale(1);
+}
+
+.partners-container__card h2,
+.partners-container__card p {
+  color: #fff;
+}
+
+@media screen and (min-width: 992px) {
+  .partners-container {
+    flex-wrap: nowrap;
+  }
+
+  .partners-container__card a:hover {
+    transform: scale(1.1);
+  }
+}
