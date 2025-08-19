@@ -28,4 +28,10 @@ Segue abaixo as instruções para a execução do teste.
 - Componentização
 - Alcance dos objetivos propostos
 
+## Como rodar localmente
+- Clone o projeto usando HTTPS ou SSH;
+     - bash: git clone https://github.com/Camila-silv/teste-front-end.git
+- Já na pasta do projeto (Em sua máquina), de npm install no bash
+- Dê npm run dev no bash, irá abrir uma porta para visualização
+
 **Boa sorte! ;)**
