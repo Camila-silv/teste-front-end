@@ -17,7 +17,7 @@ const Modal: FunctionComponent = () => {
       className={`modal-container ${showModal && `modal-container--active`}`}
     >
       <div className={`content ${showModal && `content--active`}`}>
-        <button className="close-btn" onClick={() => setShowModal(false)}>
+        <button className="close-btn" onClick={() => setShowModal(false)} title="Botão fechar">
           <IoCloseOutline />
         </button>
         <div className="left">
@@ -48,7 +48,7 @@ const Modal: FunctionComponent = () => {
           </a>
           <div className="group-container">
             <form>
-              <button>
+              <button title='Botão adicionar item'>
                 <GrFormAdd />
               </button>
               <input
@@ -57,13 +57,13 @@ const Modal: FunctionComponent = () => {
                 max={10}
                 aria-label="Quantidade de itens"
               />
-              <button>
+              <button title='Botão remover item'>
                 <GrFormSubtract />
               </button>
             </form>
-            <a href="/" title="Comprar" className="buy-btn">
+            <button title="Botão Comprar" className="buy-btn">
               Comprar
-            </a>
+            </button>
           </div>
         </div>
       </div>

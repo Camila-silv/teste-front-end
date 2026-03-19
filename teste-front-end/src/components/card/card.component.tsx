@@ -35,6 +35,7 @@ const Card: FunctionComponent<CardProps> = ({ product }) => {
   return (
     <div className="product-card">
       <button
+      title='Botão Favoritar'
         className="favorite-btn"
         onClick={e => handleFavorite(e, product)}
       >
@@ -76,14 +77,14 @@ const Card: FunctionComponent<CardProps> = ({ product }) => {
         </span>
         <span className="label">Frete grátis</span>
         <div className="btn-container">
-          <a
-            href="/"
-            title="Comprar"
+          <button
+           
+            title="Botão Comprar"
             className="btn"
             onClick={e => handleModal(e, product)}
           >
             Comprar
-          </a>
+          </button>
         </div>
       </div>
     </div>
