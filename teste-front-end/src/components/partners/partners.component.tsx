@@ -4,7 +4,7 @@ import { FunctionComponent } from 'react';
 
 const Partners: FunctionComponent = () => {
   return (
-    <div className="partners-container">
+    <section className="partners-container">
       <div className="partners-container__card">
         <h2>Parceiros</h2>
         <p>Lorem ipsum dolor sit <br/>amet, consectetur</p>
@@ -19,7 +19,7 @@ const Partners: FunctionComponent = () => {
           Confira
         </a>
       </div>
-    </div>
+    </section>
   );
 };
 
