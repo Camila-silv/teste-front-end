@@ -24,7 +24,7 @@ const Favorites: FunctionComponent = () => {
         </div>
       </div>
 
-      <Modal />
+      
     </>
   );
 };
