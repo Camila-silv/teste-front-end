@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react';
 import './footer.styles.scss';
 
-import logo from '../../../public/logo.webp';
+import logo from '../../assets/logo.webp';
 
 import { FaInstagram } from 'react-icons/fa';
 import { FiFacebook, FiLinkedin } from 'react-icons/fi';
@@ -73,7 +73,7 @@ const Footer: FunctionComponent = () => {
                 loading="lazy"
               />
 
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Criatividade, estratégia e tecnologia para marcas que<br /> querem ir além</p>
 
               <div className="icons-container">
                 <a href="/" title="Instagram">
@@ -154,7 +154,7 @@ const Footer: FunctionComponent = () => {
         </div>
       </footer>
       <div className="copywriting-container">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>© Econverse 2026 - Todos os direitos reservados.</p>
       </div>
     </>
   );
