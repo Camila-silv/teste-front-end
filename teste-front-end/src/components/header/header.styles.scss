@@ -1,3 +1,7 @@
+.block.header {
+  display: none;
+}
+
 .top-container {
   border-bottom: 1px solid #f0f0f0;
   padding-bottom: 16px;
@@ -150,8 +154,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 14px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding: 16px 8px;
   box-shadow: 0 8px 16px 0 #39301312;
 }
 
@@ -232,5 +235,28 @@
 
   .list-benefits {
     gap: 7.438rem;
+  }
+
+  .fixed-header-container {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: #fff;
+  }
+
+  .block.header {
+    height: 22.2875rem;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1074px) {
+  .block.header {
+    height: 18.7875rem;
+  }
+}
+@media screen and (min-width: 1155px) {
+  .block.header {
+    height: 12.35rem;
   }
 }
