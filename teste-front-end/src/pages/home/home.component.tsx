@@ -69,7 +69,6 @@ const Home: FunctionComponent = () => {
           <Carousel>{<span className="subtitle">Ver todos</span>}</Carousel>
         </section>
       </main>
-      <Footer />
 
       <Modal />
     </>
