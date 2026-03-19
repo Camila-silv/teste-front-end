@@ -41,7 +41,7 @@ const Brands: FunctionComponent = () => {
   };
 
   return (
-    <div className="brands-container">
+    <section className="brands-container">
       <div className="header">
         <h2>Navegue por marcas</h2>
 
@@ -83,7 +83,7 @@ const Brands: FunctionComponent = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

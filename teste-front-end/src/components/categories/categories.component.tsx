@@ -14,7 +14,7 @@ import {
 
 const Categories: FunctionComponent = () => {
   return (
-    <section className="categories-container">
+    <div className="categories-container">
       <a href="/" title="Tecnologia">
         <div className="card active">
           <div>
@@ -77,7 +77,7 @@ const Categories: FunctionComponent = () => {
           <h2 className='title'>Moda</h2>
         </div>
       </a>
-    </section>
+    </div>
   );
 };
 

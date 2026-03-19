@@ -6,12 +6,8 @@ import {
   Carousel,
   Partners,
   Brands,
-  Footer,
-  Modal,
 } from '../../components/index';
 
-// Default theme
-import '@splidejs/react-splide/css';
 
 const Home: FunctionComponent = () => {
   return (

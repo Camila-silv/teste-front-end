@@ -44,7 +44,7 @@ const Carousel: FunctionComponent<CarouselProps> = ({ children }) => {
   };
   
   return (
-    <div className="carousel-container">
+    <section className="carousel-container">
       <div className="header">
         <h2>Produtos relacionados</h2>
 
@@ -91,7 +91,7 @@ const Carousel: FunctionComponent<CarouselProps> = ({ children }) => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

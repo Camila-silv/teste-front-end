@@ -7,14 +7,14 @@ const Partners: FunctionComponent = () => {
     <section className="partners-container">
       <div className="partners-container__card">
         <h2>Parceiros</h2>
-        <p>Lorem ipsum dolor sit <br/>amet, consectetur</p>
+        <p>Implementamos, operamos e gerenciamos as principais do mercado.</p>
         <a href="" title="Confira nossos parceiros">
           Confira
         </a>
       </div>
       <div className="partners-container__card">
         <h2>Parceiros</h2>
-        <p>Lorem ipsum dolor sit <br/>amet, consectetur</p>
+        <p>Implementamos, operamos e gerenciamos as principais do mercado.</p>
         <a href="" title="Confira nossos parceiros">
           Confira
         </a>
