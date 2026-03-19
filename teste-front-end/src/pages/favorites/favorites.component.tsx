@@ -17,7 +17,7 @@ const Favorites: FC = () => {
           ) : (
             <div className="content">
               {favoritesList.map(favorite => (
-                <Card product={favorite} key={favorite.productName} className='product-card--limited' />
+                <Card product={favorite} key={favorite.productName} size='large'/>
               ))}
             </div>
           )}

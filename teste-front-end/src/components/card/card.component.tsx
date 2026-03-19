@@ -10,10 +10,18 @@ import { IoHeartOutline, IoHeartSharp } from 'react-icons/io5';
 
 interface CardProps {
   product: Product;
-  className?: string
+  size?: string;
 }
 
-const Card: FC<CardProps> = ({ product, className }) => {
+const Card: FC<CardProps> = ({ product, size }) => {
+  const getSizeClass = () => {
+    if (size === 'large') {
+      return 'product-card--limited';
+    }
+
+    return '';
+  };
+
   const { setShowModal, setSelectedProduct } = useModal();
   const { favoritesList, setFavoritesList } = useFavorites();
 
@@ -23,20 +31,22 @@ const Card: FC<CardProps> = ({ product, className }) => {
     setShowModal(true);
   };
 
- const handleFavorite = (e: React.MouseEvent, product: Product) => {
-  e.preventDefault();
+  const handleFavorite = (e: React.MouseEvent, product: Product) => {
+    e.preventDefault();
 
-  if (favoritesList.some(fav => fav.productName === product.productName)) {
-    setFavoritesList(favoritesList.filter(fav => fav.productName !== product.productName));
-  } else {
-    setFavoritesList([...favoritesList, product]);
-  }
-};
+    if (favoritesList.some(fav => fav.productName === product.productName)) {
+      setFavoritesList(
+        favoritesList.filter(fav => fav.productName !== product.productName)
+      );
+    } else {
+      setFavoritesList([...favoritesList, product]);
+    }
+  };
 
   return (
-    <div className={`product-card ${className}`}>
+    <div className={`product-card ${getSizeClass()}`}>
       <button
-      title='Botão Favoritar'
+        title="Botão Favoritar"
         className="favorite-btn"
         onClick={e => handleFavorite(e, product)}
       >
@@ -79,7 +89,6 @@ const Card: FC<CardProps> = ({ product, className }) => {
         <span className="label">Frete grátis</span>
         <div className="btn-container">
           <button
-           
             title="Botão Comprar"
             className="btn"
             onClick={e => handleModal(e, product)}
