@@ -1,9 +1,7 @@
 import './header.styles.scss';
 
-import creditCard from '../../../public/icons/credit-card.svg';
-import truck from '../../../public/icons/truck.svg';
-import shield from '../../../public/icons/shield.svg';
-import logo from '../../../public/logo.webp';
+import { CreditCard, Truck, Shield } from '../../assets/icons/index';
+import logo from '../../assets/logo.webp';
 
 import { CiSearch } from 'react-icons/ci';
 import { FunctionComponent } from 'react';
@@ -18,26 +16,14 @@ const Header: FunctionComponent = () => {
         <div className="top-container">
           <ul className="list-benefits">
             <li className="list-benefits__item">
-              <img
-                src={creditCard}
-                alt="Icone compra segura"
-                title="Icone compra segura"
-                height="20"
-                width="20"
-              />
+              <CreditCard />
               <span>
                 Compra <span className="custom-span">100% segura</span>
               </span>
             </li>
 
             <li className="list-benefits__item">
-              <img
-                src={truck}
-                alt="Icone Frete grátis"
-                title="Icone Frete grátis"
-                height="20"
-                width="20"
-              />
+              <Truck />
               <span>
                 <span className="custom-span">Frete grátis</span> acima de R$
                 200
@@ -45,13 +31,7 @@ const Header: FunctionComponent = () => {
             </li>
 
             <li className="list-benefits__item">
-              <img
-                src={shield}
-                alt="Icone Parcele suas compras"
-                title="Icone Parcele suas compras"
-                height="20"
-                width="20"
-              />
+              <Shield />
               <span>
                 <span className="custom-span">Parcele</span> suas compras
               </span>

@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react';
 import './brands.styles.scss';
 
-import logo from '../../../public/logo.webp';
+import logo from '../../assets/logo.webp';
 
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 

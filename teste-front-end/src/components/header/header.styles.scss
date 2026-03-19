@@ -105,42 +105,42 @@
 }
 
 .header-items__item:nth-child(1) a:before {
-  background: url('../../../public/icons/box.svg') no-repeat;
+  background: url('../../assets/icons/others/box.svg') no-repeat;
   background-size: contain;
 }
 
 .header-items__item:nth-child(1) a::after {
-  background: url('../../../public/icons/hover-box.svg') no-repeat;
+  background: url('../../assets/icons/others/hover-box.svg') no-repeat;
   background-size: contain;
 }
 
 .header-items__item:nth-child(2) a:before {
-  background: url('../../../public/icons/favorites.svg') no-repeat;
+  background: url('../../assets/icons/others/favorites.svg') no-repeat;
   background-size: contain;
 }
 
 .header-items__item:nth-child(2) a::after {
-  background: url('../../../public/icons/hover-favorites.svg') no-repeat;
+  background: url('../../assets/icons/others/hover-favorites.svg') no-repeat;
   background-size: contain;
 }
 
 .header-items__item:nth-child(3) a:before {
-  background: url('../../../public/icons/user.svg') no-repeat;
+  background: url('../../assets/icons/others/user.svg') no-repeat;
   background-size: contain;
 }
 
 .header-items__item:nth-child(3) a::after {
-  background: url('../../../public/icons/hover-user.svg') no-repeat;
+  background: url('../../assets/icons/others/hover-user.svg') no-repeat;
   background-size: contain;
 }
 
 .header-items__item:nth-child(4) a:before {
-  background: url('../../../public/icons/shopping-cart.svg') no-repeat;
+  background: url('../../assets/icons/others/shopping-cart.svg') no-repeat;
   background-size: contain;
 }
 
 .header-items__item:nth-child(4) a::after {
-  background: url('../../../public/icons/hover-shopping-cart.svg') no-repeat;
+  background: url('../../assets/icons/others/hover-shopping-cart.svg') no-repeat;
   background-size: contain;
 }
 
@@ -189,12 +189,12 @@
 }
 
 .navbar-items__item--custom .icon::before {
-  background: url('../../../public/icons/crown.svg') no-repeat;
+  background: url('../../assets/icons/others/crown.svg') no-repeat;
   background-size: contain;
 }
 
 .navbar-items__item--custom .icon::after {
-  background: url('../../../public/icons/hover-crown.svg') no-repeat;
+  background: url('../../assets/icons/others/hover-crown.svg') no-repeat;
   background-size: contain;
   z-index: 3;
   opacity: 0;
