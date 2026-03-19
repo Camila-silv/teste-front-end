@@ -20,7 +20,7 @@ const Categories: FunctionComponent = () => {
           <div>
             <Technology />
           </div>
-          <h3>Tecnologia</h3>
+          <h2 className='title'>Tecnologia</h2>
         </div>
       </a>
 
@@ -29,7 +29,7 @@ const Categories: FunctionComponent = () => {
           <div>
             <Supermarke />
           </div>
-          <h3>Supermercado</h3>
+          <h2 className='title'>Supermercado</h2>
         </div>
       </a>
 
@@ -38,7 +38,7 @@ const Categories: FunctionComponent = () => {
           <div>
             <Drinks />
           </div>
-          <h3>Bebidas</h3>
+          <h2 className='title'>Bebidas</h2>
         </div>
       </a>
 
@@ -47,7 +47,7 @@ const Categories: FunctionComponent = () => {
           <div>
             <Tools />
           </div>
-          <h3>Ferramentas</h3>
+          <h2 className='title'>Ferramentas</h2>
         </div>
       </a>
 
@@ -56,7 +56,7 @@ const Categories: FunctionComponent = () => {
           <div>
             <Health />
           </div>
-          <h3>Saúde</h3>
+          <h2 className='title'>Saúde</h2>
         </div>
       </a>
 
@@ -65,7 +65,7 @@ const Categories: FunctionComponent = () => {
           <div>
             <Sports />
           </div>
-          <h3>Esportes e Fitness</h3>
+          <h2 className='title'>Esportes e Fitness</h2>
         </div>
       </a>
 
@@ -74,7 +74,7 @@ const Categories: FunctionComponent = () => {
           <div>
            <Fashion />
           </div>
-          <h3>Moda</h3>
+          <h2 className='title'>Moda</h2>
         </div>
       </a>
     </section>

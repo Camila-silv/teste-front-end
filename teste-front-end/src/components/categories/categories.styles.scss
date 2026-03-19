@@ -26,7 +26,7 @@
   transition: 0.3s ease;
 }
 
-.card h3 {
+.card .title {
   font-weight: 500;
   font-size: 14px;
   color: #4e4e4e;
@@ -44,8 +44,8 @@
     background-color: #fff;
   }
 
-  .card:hover h3,
-  .active h3 {
+  .card:hover .title,
+  .active .title {
     color: #3019b2;
   }
 }
