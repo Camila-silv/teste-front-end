@@ -1,9 +1,9 @@
 import { Outlet } from 'react-router-dom';
 import { Footer, Header, Modal } from '../index';
-import { FunctionComponent } from 'react';
+import { FC } from 'react';
 import { createPortal } from 'react-dom';
 
-const RootLayout: FunctionComponent = () => {
+const RootLayout: FC = () => {
   return (
     <>
       <Header />

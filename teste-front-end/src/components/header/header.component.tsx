@@ -4,11 +4,11 @@ import { CreditCard, Truck, Shield } from '../../assets/icons/index';
 import logo from '../../assets/logo.webp';
 
 import { CiSearch } from 'react-icons/ci';
-import { FunctionComponent } from 'react';
+import { FC } from 'react';
 import { Link } from 'react-router-dom';
 import { useFavorites } from '../../hooks/useFavorites.hooks';
 
-const Header: FunctionComponent = () => {
+const Header: FC = () => {
   const { favoritesList } = useFavorites();
   return (
     <>

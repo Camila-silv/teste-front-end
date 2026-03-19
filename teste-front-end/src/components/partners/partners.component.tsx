@@ -1,8 +1,8 @@
 import './partners.styles.scss';
 
-import { FunctionComponent } from 'react';
+import { FC } from 'react';
 
-const Partners: FunctionComponent = () => {
+const Partners: FC = () => {
   return (
     <section className="partners-container">
       <div className="partners-container__card">

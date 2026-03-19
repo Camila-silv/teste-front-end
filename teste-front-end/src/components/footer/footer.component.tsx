@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react';
+import { FC } from 'react';
 import './footer.styles.scss';
 
 import logo from '../../assets/logo.webp';
@@ -6,7 +6,7 @@ import logo from '../../assets/logo.webp';
 import { FaInstagram } from 'react-icons/fa';
 import { FiFacebook, FiLinkedin } from 'react-icons/fi';
 
-const Footer: FunctionComponent = () => {
+const Footer: FC = () => {
   return (
     <>
       <div className="top-footer">
@@ -73,7 +73,10 @@ const Footer: FunctionComponent = () => {
                 loading="lazy"
               />
 
-                <p>Criatividade, estratégia e tecnologia para marcas que<br /> querem ir além</p>
+              <p>
+                Criatividade, estratégia e tecnologia para marcas que
+                <br /> querem ir além
+              </p>
 
               <div className="icons-container">
                 <a href="/" title="Instagram">
@@ -89,7 +92,7 @@ const Footer: FunctionComponent = () => {
             </div>
             <hr />
             <div className="right">
-              <div className='right__container'>
+              <div className="right__container">
                 <h3>Institucional</h3>
                 <ul>
                   <li>
@@ -109,7 +112,7 @@ const Footer: FunctionComponent = () => {
                   </li>
                 </ul>
               </div>
-              <div className='right__container'>
+              <div className="right__container">
                 <h3>Ajuda</h3>
                 <ul>
                   <li>
@@ -129,7 +132,7 @@ const Footer: FunctionComponent = () => {
                   </li>
                 </ul>
               </div>
-              <div className='right__container'>
+              <div className="right__container">
                 <h3>Termos</h3>
                 <ul>
                   <li>

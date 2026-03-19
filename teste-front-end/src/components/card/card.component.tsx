@@ -1,4 +1,4 @@
-import { FunctionComponent, useContext } from 'react';
+import { FC } from 'react';
 
 import './card.styles.scss';
 
@@ -10,9 +10,10 @@ import { IoHeartOutline, IoHeartSharp } from 'react-icons/io5';
 
 interface CardProps {
   product: Product;
+  className?: string
 }
 
-const Card: FunctionComponent<CardProps> = ({ product }) => {
+const Card: FC<CardProps> = ({ product, className }) => {
   const { setShowModal, setSelectedProduct } = useModal();
   const { favoritesList, setFavoritesList } = useFavorites();
 
@@ -33,7 +34,7 @@ const Card: FunctionComponent<CardProps> = ({ product }) => {
 };
 
   return (
-    <div className="product-card">
+    <div className={`product-card ${className}`}>
       <button
       title='Botão Favoritar'
         className="favorite-btn"

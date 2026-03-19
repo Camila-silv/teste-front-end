@@ -1,6 +1,6 @@
 import './categories.styles.scss';
 
-import { FunctionComponent } from 'react';
+import { FC } from 'react';
 
 import {
   Technology,
@@ -12,7 +12,7 @@ import {
   Fashion,
 } from '../../assets/icons/index';
 
-const Categories: FunctionComponent = () => {
+const Categories: FC = () => {
   return (
     <div className="categories-container">
       <a href="/" title="Tecnologia">
@@ -20,7 +20,7 @@ const Categories: FunctionComponent = () => {
           <div>
             <Technology />
           </div>
-          <h2 className='title'>Tecnologia</h2>
+          <h2 className="title">Tecnologia</h2>
         </div>
       </a>
 
@@ -29,7 +29,7 @@ const Categories: FunctionComponent = () => {
           <div>
             <Supermarke />
           </div>
-          <h2 className='title'>Supermercado</h2>
+          <h2 className="title">Supermercado</h2>
         </div>
       </a>
 
@@ -38,7 +38,7 @@ const Categories: FunctionComponent = () => {
           <div>
             <Drinks />
           </div>
-          <h2 className='title'>Bebidas</h2>
+          <h2 className="title">Bebidas</h2>
         </div>
       </a>
 
@@ -47,7 +47,7 @@ const Categories: FunctionComponent = () => {
           <div>
             <Tools />
           </div>
-          <h2 className='title'>Ferramentas</h2>
+          <h2 className="title">Ferramentas</h2>
         </div>
       </a>
 
@@ -56,7 +56,7 @@ const Categories: FunctionComponent = () => {
           <div>
             <Health />
           </div>
-          <h2 className='title'>Saúde</h2>
+          <h2 className="title">Saúde</h2>
         </div>
       </a>
 
@@ -65,16 +65,16 @@ const Categories: FunctionComponent = () => {
           <div>
             <Sports />
           </div>
-          <h2 className='title'>Esportes e Fitness</h2>
+          <h2 className="title">Esportes e Fitness</h2>
         </div>
       </a>
 
       <a href="/" title="Moda">
         <div className="card">
           <div>
-           <Fashion />
+            <Fashion />
           </div>
-          <h2 className='title'>Moda</h2>
+          <h2 className="title">Moda</h2>
         </div>
       </a>
     </div>

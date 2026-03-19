@@ -1,4 +1,4 @@
-import { FunctionComponent, useContext } from 'react';
+import { FC, useContext } from 'react';
 import './modal.styles.scss';
 
 import { MdKeyboardArrowRight } from 'react-icons/md';
@@ -6,18 +6,21 @@ import { IoCloseOutline } from 'react-icons/io5';
 import { GrFormAdd, GrFormSubtract } from 'react-icons/gr';
 import { useModal } from '../../hooks/useModal.hook';
 
-
-const Modal: FunctionComponent = () => {
+const Modal: FC = () => {
   const { showModal, setShowModal, selectedProduct } = useModal();
 
-  if (!selectedProduct) return null; 
+  if (!selectedProduct) return null;
 
   return (
     <div
       className={`modal-container ${showModal && `modal-container--active`}`}
     >
       <div className={`content ${showModal && `content--active`}`}>
-        <button className="close-btn" onClick={() => setShowModal(false)} title="Botão fechar">
+        <button
+          className="close-btn"
+          onClick={() => setShowModal(false)}
+          title="Botão fechar"
+        >
           <IoCloseOutline />
         </button>
         <div className="left">
@@ -48,7 +51,7 @@ const Modal: FunctionComponent = () => {
           </a>
           <div className="group-container">
             <form>
-              <button title='Botão adicionar item'>
+              <button title="Botão adicionar item">
                 <GrFormAdd />
               </button>
               <input
@@ -57,7 +60,7 @@ const Modal: FunctionComponent = () => {
                 max={10}
                 aria-label="Quantidade de itens"
               />
-              <button title='Botão remover item'>
+              <button title="Botão remover item">
                 <GrFormSubtract />
               </button>
             </form>

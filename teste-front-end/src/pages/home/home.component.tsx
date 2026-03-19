@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react';
+import { FC } from 'react';
 
 import {
   Banner,
@@ -8,8 +8,7 @@ import {
   Brands,
 } from '../../components/index';
 
-
-const Home: FunctionComponent = () => {
+const Home: FC = () => {
   return (
     <>
       <Banner />
@@ -59,8 +58,6 @@ const Home: FunctionComponent = () => {
         <Brands />
         <Carousel>{<span className="subtitle">Ver todos</span>}</Carousel>
       </main>
-
-     
     </>
   );
 };

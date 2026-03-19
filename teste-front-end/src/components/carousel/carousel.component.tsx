@@ -1,5 +1,5 @@
 import './carousel.styles.scss';
-import { ReactNode, FunctionComponent, useRef } from 'react';
+import { ReactNode, FC, useRef } from 'react';
 
 import { useProducts } from '../../hooks/useProducts.hook';
 import { Card } from '../index';
@@ -8,7 +8,7 @@ interface CarouselProps {
   children: ReactNode;
 }
 
-const Carousel: FunctionComponent<CarouselProps> = ({ children }) => {
+const Carousel: FC<CarouselProps> = ({ children }) => {
   const { products } = useProducts();
   const carouselRef = useRef<HTMLDivElement>(null);
 
@@ -42,7 +42,7 @@ const Carousel: FunctionComponent<CarouselProps> = ({ children }) => {
       behavior: 'smooth',
     });
   };
-  
+
   return (
     <section className="carousel-container">
       <div className="header">

@@ -1,9 +1,9 @@
-import { FunctionComponent, useRef } from 'react';
+import { FC, useRef } from 'react';
 import './brands.styles.scss';
 
 import logo from '../../assets/logo.webp';
 
-const Brands: FunctionComponent = () => {
+const Brands: FC = () => {
   const carouselRef = useRef<HTMLDivElement>(null);
 
   const getItemWidth = () => {
@@ -46,7 +46,12 @@ const Brands: FunctionComponent = () => {
         <h2>Navegue por marcas</h2>
 
         <div className="controls">
-          <button onClick={scrollLeft} className='brands-container__arrow brands-container__arrow--prev'> <svg
+          <button
+            onClick={scrollLeft}
+            className="brands-container__arrow brands-container__arrow--prev"
+          >
+            {' '}
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 40 40"
               width="40"
@@ -54,8 +59,11 @@ const Brands: FunctionComponent = () => {
               focusable="false"
             >
               <path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path>
-            </svg></button>
-          <button onClick={scrollRight} className='brands-container__arrow'> <svg
+            </svg>
+          </button>
+          <button onClick={scrollRight} className="brands-container__arrow">
+            {' '}
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 40 40"
               width="40"
@@ -63,7 +71,8 @@ const Brands: FunctionComponent = () => {
               focusable="false"
             >
               <path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path>
-            </svg></button>
+            </svg>
+          </button>
         </div>
       </div>
 

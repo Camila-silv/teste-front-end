@@ -1,17 +1,21 @@
 import './banner.styles.scss';
 
-import { FunctionComponent } from 'react';
+import { FC } from 'react';
 
-const Banner: FunctionComponent = () => {
+const Banner: FC = () => {
   return (
     <div className="banner-container">
       <div className="container">
         <div>
-          <h2>Venha conhecer nossas <br/> promoções</h2>
+          <h2>
+            Venha conhecer nossas <br /> promoções
+          </h2>
           <p>
             <span>50% Off</span> nos produtos
           </p>
-          <a href="/" title="Ver produto">Ver produto</a>
+          <a href="/" title="Ver produto">
+            Ver produto
+          </a>
         </div>
       </div>
     </div>
