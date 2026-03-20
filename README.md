@@ -1,37 +1,120 @@
-# Teste Econverse: Vaga Desenvolvedor Front-End
+# 🚀 Teste Econverse - Front-End
 
-### Vem ser #Econverse!
+Este projeto foi desenvolvido como parte do teste para a vaga de Desenvolvedor Front-End Jr na Econverse, utilizando **React**, **TypeScript** e **Vite**.
 
-Segue abaixo as instruções para a execução do teste.
+---
 
-## Instruções
-- Faça um fork desse projeto para a sua conta pessoal do GitHub.
-- Desenvolva a página conforme as **Especificações Técnicas** 
-- Crie um README com as instruções para compilar, testar e rodar o projeto.
-- O link do repositório deverá ser enviado para o e-mail ana.nascimento@econverse.com.br, joao.victor@econverse.com.br e eduardo.rodrigues@econverse.com.br com o título **Teste Vaga FrontEnd Jr**
+## 📦 Scripts Disponíveis
 
-## Especificações Técnicas
-- Desenvolver a pagina em React e TypeScript conforme o [layout](https://www.figma.com/file/rWnzPeoxgynuNPsJjV0VmV/Teste-Front-End-Jr?node-id=0%3A1). Para conseguir pegar os elementos do Figma, basta copiar o layout para sua conta que terá acesso de edição.
-- Montar a [vitrine](https://app.econverse.com.br/teste-front-end/junior/tecnologia/layout/vitrine-produtos.png) de produtos consumindo as informações dos produtos em json atraves desse [Link](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json).
-- Desenvolver a interação ao clicar em um produto conforme layout. A interação consiste em abrir um modal com as principais informações do produto presente no arquivo [JSON](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json) conforme o produto que clicar.
-- Utilizar Pré-processador Sass, Less ou Stylus.
-- Respeitar o Layout pixel a pixel, tamanho das fontes, cores e botões.
-- Não Utilizar bibliotecas UI como Bootstrap, Foundation, ou afins.
+No diretório do projeto, você pode executar:
 
-## Pontos Extras
-- Utilizar Boas práticas de SEO
-- Uso de HTML semântico
+### `npm run dev`
 
-## O que avaliaremos em seu teste
-- Organização do projeto
-- Lógica do código
-- Componentização
-- Alcance dos objetivos propostos
+Executa o app em modo de desenvolvimento.
 
-## Como rodar localmente
-- Clone o projeto usando HTTPS ou SSH;
-     - bash: git clone https://github.com/Camila-silv/teste-front-end.git
-- Já na pasta do projeto (Em sua máquina), de npm install no bash
-- Dê npm run dev no bash, irá abrir uma porta para visualização
+Abra http://localhost:5173 para visualizar no navegador.
 
-**Boa sorte! ;)**
+A página será recarregada automaticamente ao fazer alterações no código.
+Você também verá erros e avisos no console.
+
+---
+
+### `npm run build`
+
+Gera a versão de produção do projeto na pasta `dist`.
+
+O build é otimizado, minificado e pronto para deploy.
+
+---
+
+### `npm run preview`
+
+Executa uma prévia da versão de produção localmente.
+
+Ideal para testar como o projeto vai se comportar em produção.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+* React
+* TypeScript
+* Vite
+* Sass (SCSS)
+* Context API
+
+---
+
+## 📁 Estrutura do Projeto
+
+O projeto segue uma estrutura baseada em componentização:
+
+* `components/` → Componentes reutilizáveis (Header, Modal, Card, etc)
+* `context/` → Contextos globais (Modal, Produtos, Favoritos)
+* `hooks/` → Hooks personalizados
+* `assets/` → Imagens e ícones
+
+---
+
+## ⚙️ Como rodar o projeto localmente
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/Camila-silv/teste-front-end.git
+```
+
+2. Acesse a pasta do projeto:
+
+```bash
+cd teste-front-end
+```
+
+3. Instale as dependências:
+
+```bash
+npm install
+```
+
+4. Execute o projeto:
+
+```bash
+npm run dev
+```
+
+---
+
+## 📌 Funcionalidades
+
+* Listagem de produtos via JSON
+* Carrossel de produtos
+* Modal com detalhes do produto
+* Controle de quantidade
+* Sistema de favoritos
+* Layout responsivo
+
+---
+
+## 📈 Pontos aplicados
+
+* Boas práticas de componentização
+* Uso de Context API para gerenciamento de estado
+* HTML semântico
+* Organização de código escalável
+
+---
+
+## 📚 Saiba mais
+
+* Documentação do Vite: https://vitejs.dev/
+* Documentação do React: https://react.dev/
+* Documentação do TypeScript: https://www.typescriptlang.org/
+
+---
+
+## ✨ Observações
+
+O projeto foi desenvolvido seguindo o layout proposto no Figma, respeitando cores (algumas**), tipografia e espaçamentos.
+
+obs**: Algumas cores propostas no Figma, como tons de cinza muito claros, apresentam baixo contraste em relação a outras cores (como o branco), o que pode comprometer a acessibilidade da interface e impactar negativamente critérios de SEO.
+
