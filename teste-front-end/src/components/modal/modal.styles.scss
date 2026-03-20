@@ -125,7 +125,7 @@
       input {
         background-color: transparent;
         border: none;
-        width: fit-content;
+        width: 54px;
         outline: none;
         -moz-appearance: textfield;
         text-align: center;
@@ -167,6 +167,21 @@
 
 .modal-container > .content--active {
   transform: translateY(0);
+}
+
+.my-node-enter {
+  opacity: 0;
+}
+.my-node-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.my-node-exit {
+  opacity: 1;
+}
+.my-node-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
 }
 
 @media screen and (min-width: 992px) {

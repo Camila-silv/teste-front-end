@@ -12,7 +12,8 @@ const RootLayout: FC = () => {
 
       <Footer />
 
-      {createPortal(<Modal />, document.body)}
+      {typeof document !== 'undefined' &&
+        createPortal(<Modal />, document.body)}
     </>
   );
 };

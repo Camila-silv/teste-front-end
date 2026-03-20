@@ -1,4 +1,10 @@
-import { createContext, useState, ReactNode, Dispatch, SetStateAction } from 'react';
+import {
+  createContext,
+  useState,
+  ReactNode,
+  Dispatch,
+  SetStateAction,
+} from 'react';
 
 export interface Product {
   productName: string;
@@ -18,14 +24,21 @@ interface ModalProviderProps {
   children: ReactNode;
 }
 
-export const ModalContext = createContext<ModalContextType | undefined>(undefined);
+export const ModalContext = createContext<ModalContextType | null>(null);
 
 export const ModalProvider = ({ children }: ModalProviderProps) => {
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState<boolean>(false);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
   return (
-    <ModalContext.Provider value={{ showModal, setShowModal, selectedProduct, setSelectedProduct }}>
+    <ModalContext.Provider
+      value={{
+        showModal,
+        setShowModal,
+        selectedProduct,
+        setSelectedProduct,
+      }}
+    >
       {children}
     </ModalContext.Provider>
   );
