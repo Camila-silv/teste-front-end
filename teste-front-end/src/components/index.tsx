@@ -8,6 +8,7 @@ import Footer from './footer/footer.component';
 import Modal from './modal/modal.component';
 import RootLayout from './rootLayout/rootLayout.component';
 import Card from './card/card.component';
+import HeaderMobile from "./Mobile/Header/Header.component"
 
 export {
   Header,
@@ -19,5 +20,6 @@ export {
   Footer,
   Modal,
   RootLayout,
-  Card
+  Card,
+  HeaderMobile
 };
