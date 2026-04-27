@@ -125,7 +125,6 @@ const Header: FC = () => {
           </nav>
         </header>
       </div>
-      <div className="block header"></div>
     </>
   );
 };
