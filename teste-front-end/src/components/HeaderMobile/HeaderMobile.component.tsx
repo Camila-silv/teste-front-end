@@ -1,9 +1,9 @@
-import './header.styles.scss';
+import './headerMobile.styles.scss';
 
 import { useState, FC } from 'react';
 import { CiSearch } from 'react-icons/ci';
 import { Link } from 'react-router-dom';
-import logo from '../../../assets/logo.webp';
+import logo from '../../assets/logo.webp';
 
 const HeaderMobile: FC = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);

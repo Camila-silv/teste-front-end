@@ -1,14 +1,14 @@
-import Header from './header/header.component';
-import Banner from './banner/banner.component';
-import Categories from './categories/categories.component';
-import Carousel from './carousel/carousel.component';
-import Partners from './partners/partners.component';
-import Brands from './brands/brands.component';
-import Footer from './footer/footer.component';
-import Modal from './modal/modal.component';
+import Header from './Header/Header.component';
+import Banner from './Banner/Banner.component';
+import Categories from './Categories/Categories.component';
+import Carousel from './Carousel/Carousel.component';
+import Partners from './Partners/Partners.component';
+import Brands from './Brands/Brands.component';
+import Modal from './Modal/Modal.component';
 import RootLayout from './rootLayout/rootLayout.component';
-import Card from './card/card.component';
-import HeaderMobile from './mobile/header/headerMobile.component';
+import Card from './Card/Card.component';
+import HeaderMobile from './HeaderMobile/HeaderMobile.component';
+import Footer from './Footer/Footer.component';
 
 export {
   Header,
@@ -17,9 +17,9 @@ export {
   Carousel,
   Partners,
   Brands,
-  Footer,
   Modal,
   RootLayout,
   Card,
   HeaderMobile,
+  Footer,
 };
