@@ -26,28 +26,28 @@ const HeaderMobile = () => {
         </button>
       </div>
 
-      <div className={`mobile-menu ${menuOpen ? 'active' : ''}`}>
+      <nav className={`mobile-menu ${menuOpen ? 'active' : ''}`}>
         <ul>
           <li>
-            <a href="/">Todas as compras</a>
+            <a href="/" title='Todas as compras'>Todas as compras</a>
           </li>
           <li>
-            <a href="/">Supermercado</a>
+            <a href="/" title='Supermercado'>Supermercado</a>
           </li>
           <li>
-            <a href="/">Livros</a>
+            <a href="/" title='Livros'>Livros</a>
           </li>
           <li>
-            <a href="/">Moda</a>
+            <a href="/" title='Moda'>Moda</a>
           </li>
           <li>
-            <a href="/">Lançamentos</a>
+            <a href="/" title='Lançamentos'>Lançamentos</a>
           </li>
           <li>
-            <a href="/">Ofertas do dia</a>
+            <a href="/" title='Ofertas do dia'>Ofertas do dia</a>
           </li>
         </ul>
-      </div>
+      </nav>
 
       {menuOpen && (
         <div className="overlay" onClick={() => setMenuOpen(false)} />
